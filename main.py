@@ -59,14 +59,14 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press âŒ˜F8 to toggle the breakpoint.
 
-def parse_entry(number):
-    print(number)
+def parse_entry(entrada):
+    return ''.join([parse_number(entrada, posicion) for posicion in range(9)])
+
 
 def casilla_a_numero(casilla):
 	for n, casilla_n in numbers.items():
 		encontrado = True
 		for c, c_n in zip(casilla, casilla_n):
-			print (n , c, c_n)
 			if c != c_n:
 				encontrado = False
 		if encontrado:
@@ -76,9 +76,8 @@ def parse_number(entrada, posicion):
     casilla = []
     for linea in entrada.split("\n"):
         posicion_ = linea[posicion * 3:posicion * 3 + 3]
-        print(posicion_)
-        casilla.append
-        return casilla_a_numero(casilla)
+        casilla.append(posicion_)
+    return casilla_a_numero(casilla)
 
 
     return resultado
