@@ -62,12 +62,25 @@ def print_hi(name):
 def parse_entry(number):
     print(number)
 
+def casilla_a_numero(casilla):
+	for n, casilla_n in numbers.items():
+		encontrado = True
+		for c, c_n in zip(casilla, casilla_n):
+			print (n , c, c_n)
+			if c != c_n:
+				encontrado = False
+		if encontrado:
+			return n
+
 def parse_number(entrada, posicion):
-    resultado = []
+    casilla = []
     for linea in entrada.split("\n"):
         posicion_ = linea[posicion * 3:posicion * 3 + 3]
         print(posicion_)
-        resultado.append(posicion_)
+        casilla.append
+        return casilla_a_numero(casilla)
+
+
     return resultado
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
