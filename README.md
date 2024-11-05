@@ -262,3 +262,11 @@ Ejemplo de representación de los números:
 	]
 }
 ```
+
+
+# Instalar pytest
+``` sh
+python -m venv .venv
+source .venv/bin/activate
+pip install pytest --upgrade pip
+```
