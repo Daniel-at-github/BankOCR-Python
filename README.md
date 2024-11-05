@@ -262,4 +262,3 @@ Ejemplo de representación de los números:
 	]
 }
 ```
-# BankOCR-Python
